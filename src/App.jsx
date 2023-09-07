@@ -9,6 +9,7 @@ const App = () => {
   const fetchJobs = async() =>{
     const response = await fetch(url);
     const newJobs = await response.json();
+    setJobs(newJobs);
   }
 
   useEffect(()=>{
@@ -26,3 +27,4 @@ export default App;
 // - S7-203:cr8 useEffect function base include cb function
 // - S7-203:cr8 response for await feth url
 // - S7-203:cr8 newJobs for response get back JSON
+// - S7-203:Add setJobs equal to newJobs
