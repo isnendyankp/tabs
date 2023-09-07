@@ -7,7 +7,7 @@ const App = () => {
   const [jobs, setJobs] = useState([]);
 
   const fetchJobs = async() =>{
-
+    const response = await fetch(url);
   }
 
   useEffect(()=>{
@@ -22,4 +22,5 @@ export default App;
 // - S7-203:cr8 isLoading state equal true
 // - S7-203:cr8 jobs state equal empty array
 // - S7-203:cr8 fetchJobs function for retrieve data from API with asynchronously
-// - S7-203:cr8 useEffect function base include cb function 
+// - S7-203:cr8 useEffect function base include cb function
+// - S7-203:cr8 response for await feth url
