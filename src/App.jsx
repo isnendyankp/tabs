@@ -13,9 +13,10 @@ const App = () => {
     setIsLoading(false);
   }
 
-  useEffect(()=>{
+  useEffect(() => {
+    fetchJobs();
+  }, []);
 
-  } [])
   return <h2>Tabs Starter</h2>;
 };
 export default App;
@@ -30,3 +31,4 @@ export default App;
 // - S7-203:cr8 newJobs for response get back JSON
 // - S7-203:Add setJobs equal to newJobs
 // - S7-203:setIsLoading to false after done on fetchJobs
+// - S7-203:setup fetcJobs in useEffect
