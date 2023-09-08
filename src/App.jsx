@@ -17,7 +17,9 @@ const App = () => {
     fetchJobs();
   }, []);
   if(isloading){
-    
+    return <section className="jobs-center">
+
+    </section> 
   }
   console.log(jobs);
   return <h2>Tabs Starter</h2>;
@@ -37,3 +39,4 @@ export default App;
 // - S7-203:setup fetcJobs in useEffect
 // - S7-203:Checking log jobs
 // - S7-203:Add if statement for isLoading base
+// - S7-203:Add section with classname jobs-center for return
