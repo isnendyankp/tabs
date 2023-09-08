@@ -18,7 +18,7 @@ const App = () => {
   }, []);
   if(isloading){
     return <section className="jobs-center">
-
+      <div className="loading"></div>
     </section> 
   }
   console.log(jobs);
@@ -40,3 +40,4 @@ export default App;
 // - S7-203:Checking log jobs
 // - S7-203:Add if statement for isLoading base
 // - S7-203:Add section with classname jobs-center for return
+// - S7-203:Add div with classname loading in section
