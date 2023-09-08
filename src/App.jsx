@@ -16,6 +16,9 @@ const App = () => {
   useEffect(() => {
     fetchJobs();
   }, []);
+  if(isloading){
+    
+  }
   console.log(jobs);
   return <h2>Tabs Starter</h2>;
 };
@@ -33,3 +36,4 @@ export default App;
 // - S7-203:setIsLoading to false after done on fetchJobs
 // - S7-203:setup fetcJobs in useEffect
 // - S7-203:Checking log jobs
+// - S7-203:Add if statement for isLoading base
