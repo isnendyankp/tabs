@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import JobInfo from './JobInfo';
 
 const url = 'https://course-api.com/react-tabs-project';
 
@@ -24,6 +25,7 @@ const App = () => {
   
   return (
     <section className="jobs-center">
+      {/* job info */}
       
     </section>
   );
@@ -46,3 +48,4 @@ export default App;
 // - S7-203:Add section with classname jobs-center for return
 // - S7-203:Add div with classname loading in section
 // - S7-204:change return Tabs starter for btn container & job info
+// - S7-204:Import JobInfo
