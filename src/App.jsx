@@ -26,7 +26,7 @@ const App = () => {
   return (
     <section className="jobs-center">
       {/* job info */}
-      <JobInfo />
+      <JobInfo jobs={jobs}/>
     </section>
   );
 };
@@ -50,3 +50,4 @@ export default App;
 // - S7-204:change return Tabs starter for btn container & job info
 // - S7-204:Import JobInfo
 // - S7-204:Pass in JobInfo on return
+// - S7-204:Pass in Jobs equal to jobs state value
