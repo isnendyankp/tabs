@@ -26,7 +26,7 @@ const App = () => {
   return (
     <section className="jobs-center">
       {/* job info */}
-      
+      <JobInfo />
     </section>
   );
 };
@@ -49,3 +49,4 @@ export default App;
 // - S7-203:Add div with classname loading in section
 // - S7-204:change return Tabs starter for btn container & job info
 // - S7-204:Import JobInfo
+// - S7-204:Pass in JobInfo on return
