@@ -8,6 +8,7 @@ const JobInfo = ({jobs}) => {
     <article className='job-info'>
       <h3>{title}</h3>
       <span className='job-company'>{company}</span>
+      <p className='job-date'></p>
     </article>
   )
 }
@@ -21,3 +22,4 @@ export default JobInfo
 // - S7-204:Add h3 with pass in title
 // - S7-204:Add span with CN job-company
 // - S7-204:Pass in company on span
+// - S7-204:Add Paragraph with CN job-date
