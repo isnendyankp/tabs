@@ -6,7 +6,7 @@ const JobInfo = ({jobs}) => {
 
   return (
     <article className='job-info'>
-
+      <h3>{title}</h3>
     </article>
   )
 }
@@ -17,3 +17,4 @@ export default JobInfo
 // - S7-204:Pass in parameter jobs
 // - S7-204:Add article with CN job-info
 // - S7-204:Add propertys equal to jobs with index 0
+// - S7-204:Add h3 with pass in title
