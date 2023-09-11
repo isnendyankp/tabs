@@ -7,6 +7,7 @@ const JobInfo = ({jobs}) => {
   return (
     <article className='job-info'>
       <h3>{title}</h3>
+      <span className='job-company'></span>
     </article>
   )
 }
@@ -18,3 +19,4 @@ export default JobInfo
 // - S7-204:Add article with CN job-info
 // - S7-204:Add propertys equal to jobs with index 0
 // - S7-204:Add h3 with pass in title
+// - S7-204:Add span with CN job-company
