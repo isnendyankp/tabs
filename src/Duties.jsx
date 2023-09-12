@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Duties = () => {
+const Duties = ({duties}) => {
   return (
     <div>Duties</div>
   )
@@ -9,3 +9,4 @@ const Duties = () => {
 export default Duties
 
 // - S7-204:cr8 Duties component base
+// - S7-204:Accessing duties on Duties component
