@@ -1,4 +1,6 @@
 import React from 'react'
+import Duties from './Duties';
+
 
 const JobInfo = ({jobs}) => {
   // alternatives
@@ -9,6 +11,7 @@ const JobInfo = ({jobs}) => {
       <h3>{title}</h3>
       <span className='job-company'>{company}</span>
       <p className='job-date'></p>
+      <Duties />
     </article>
   )
 }
@@ -23,3 +26,4 @@ export default JobInfo
 // - S7-204:Add span with CN job-company
 // - S7-204:Pass in company on span
 // - S7-204:Add Paragraph with CN job-date
+// - S7-204:Add Duties on return
