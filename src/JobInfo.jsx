@@ -10,7 +10,7 @@ const JobInfo = ({jobs}) => {
     <article className='job-info'>
       <h3>{title}</h3>
       <span className='job-company'>{company}</span>
-      <p className='job-date'></p>
+      <p className='job-date'>{dates}</p>
       <Duties duties={duties}/>
     </article>
   )
@@ -28,3 +28,4 @@ export default JobInfo
 // - S7-204:Add Paragraph with CN job-date
 // - S7-204:Add Duties on return
 // - S7-204:Passin duties on Duties return
+// - S7-204:Passin dates on p with CN job-date
