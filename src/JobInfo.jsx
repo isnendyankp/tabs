@@ -11,7 +11,7 @@ const JobInfo = ({jobs}) => {
       <h3>{title}</h3>
       <span className='job-company'>{company}</span>
       <p className='job-date'></p>
-      <Duties />
+      <Duties duties={duties}/>
     </article>
   )
 }
@@ -27,3 +27,4 @@ export default JobInfo
 // - S7-204:Pass in company on span
 // - S7-204:Add Paragraph with CN job-date
 // - S7-204:Add Duties on return
+// - S7-204:Passin duties on Duties return
