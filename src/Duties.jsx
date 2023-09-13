@@ -6,7 +6,9 @@ const Duties = ({duties}) => {
     return (
     <div>
      {duties.map((duty, index)=>{
-      return <div key={index} className='job-desc'></div>
+      return <div key={index} className='job-desc'>
+        <FaAngleDoubleRight />
+      </div>
      })}
     </div>
   )
@@ -23,3 +25,4 @@ export default Duties
 // - S7-205:Add return div
 // - S7-205:Accessing index with key at return div
 // - S7-205:Add CN job-desc at return div
+// - S7-205:Access FaAngleDoubleRight
