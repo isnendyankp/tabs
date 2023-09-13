@@ -6,7 +6,7 @@ const Duties = ({duties}) => {
     return (
     <div>
      {duties.map((duty, index)=>{
-      return <div></div>
+      return <div key={index}></div>
      })}
     </div>
   )
@@ -21,3 +21,4 @@ export default Duties
 // - S7-205:Add base duties map with iterating over
 // - S7-205:Add access para duty & index
 // - S7-205:Add return div
+// - S7-205:Accessing index with key at return div
