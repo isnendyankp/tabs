@@ -6,7 +6,7 @@ const Duties = ({duties}) => {
     return (
     <div>
      {duties.map((duty, index)=>{
-      return <div key={index}></div>
+      return <div key={index} className='job-desc'></div>
      })}
     </div>
   )
@@ -22,3 +22,4 @@ export default Duties
 // - S7-205:Add access para duty & index
 // - S7-205:Add return div
 // - S7-205:Accessing index with key at return div
+// - S7-205:Add CN job-desc at return div
