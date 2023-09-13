@@ -5,7 +5,9 @@ const Duties = ({duties}) => {
     console.log(duties);
     return (
     <div>
-     {duties.map((duty, index)=>)}
+     {duties.map((duty, index)=>{
+      return <div></div>
+     })}
     </div>
   )
 }
@@ -18,3 +20,4 @@ export default Duties
 // - S7-205:import react icons double right
 // - S7-205:Add base duties map with iterating over
 // - S7-205:Add access para duty & index
+// - S7-205:Add return div
