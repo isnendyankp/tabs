@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from 'react';
 import JobInfo from './JobInfo';
 
 const url = 'https://course-api.com/react-tabs-project';
@@ -7,31 +7,32 @@ const App = () => {
   const [isloading, setIsLoading] = useState(true);
   const [jobs, setJobs] = useState([]);
 
-  const fetchJobs = async() =>{
+  const fetchJobs = async () => {
     const response = await fetch(url);
     const newJobs = await response.json();
     setJobs(newJobs);
     setIsLoading(false);
-  }
+  };
 
   useEffect(() => {
     fetchJobs();
   }, []);
-  if(isloading){
-    return <section className="jobs-center">
-      <div className="loading"></div>
-    </section> 
+  if (isloading) {
+    return (
+      <section className="jobs-center">
+        <div className="loading"></div>
+      </section>
+    );
   }
-  
+
   return (
     <section className="jobs-center">
       {/* job info */}
-      <JobInfo jobs={jobs}/>
+      <JobInfo jobs={jobs} />
     </section>
   );
 };
 export default App;
-
 
 // - S7-202:Setup Tabs Project
 // - S7-203:cr8 isLoading state equal true
@@ -51,3 +52,4 @@ export default App;
 // - S7-204:Import JobInfo
 // - S7-204:Pass in JobInfo on return
 // - S7-204:Pass in Jobs equal to jobs state value
+// - S7-205:import useEffect react
