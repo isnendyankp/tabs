@@ -8,8 +8,8 @@ const Duties = ({duties}) => {
     <div>
      {duties.map((duty, index)=>{
       const id = uuidv4();
-      console.log(id);
-      return <div key={index} className='job-desc'>
+      // console.log(id);
+      return <div key={id} className='job-desc'>
         <FaAngleDoubleRight className='job-icon'/>
         <p>{duty}</p>
       </div>
@@ -36,3 +36,4 @@ export default Duties
 // - S7-205:import UUID
 // - S7-205:cr8 id = uuidv4
 // - S7-205:checking log id
+// - S7-205:change accessing index key with pass in id
