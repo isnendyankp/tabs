@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaAngleDoubleRight } from 'react-icons/fa';
+import { v4 as uuidv4 } from 'uuid';
 
 const Duties = ({duties}) => {
     console.log(duties);
@@ -30,3 +31,4 @@ export default Duties
 // - S7-205:Add CN job-icon FaAngleDoubleRight
 // - S7-205:Access duty in new paragraph
 // - S7-205:install UUID
+// - S7-205:import UUID
