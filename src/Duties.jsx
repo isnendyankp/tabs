@@ -7,6 +7,7 @@ const Duties = ({duties}) => {
     return (
     <div>
      {duties.map((duty, index)=>{
+      const id = uuidv4();
       return <div key={index} className='job-desc'>
         <FaAngleDoubleRight className='job-icon'/>
         <p>{duty}</p>
@@ -32,3 +33,4 @@ export default Duties
 // - S7-205:Access duty in new paragraph
 // - S7-205:install UUID
 // - S7-205:import UUID
+// - S7-205:cr8 id = uuidv4
