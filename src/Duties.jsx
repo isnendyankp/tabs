@@ -29,3 +29,4 @@ export default Duties
 // - S7-205:Access FaAngleDoubleRight
 // - S7-205:Add CN job-icon FaAngleDoubleRight
 // - S7-205:Access duty in new paragraph
+// - S7-205:install UUID
