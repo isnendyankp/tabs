@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import JobInfo from './JobInfo';
+import BtnContainer from './BtnContainer';
 
 const url = 'https://course-api.com/react-tabs-project';
 
@@ -27,6 +28,8 @@ const App = () => {
 
   return (
     <section className="jobs-center">
+      {/* button container */}
+      <BtnContainer />
       {/* job info */}
       <JobInfo jobs={jobs} />
     </section>
@@ -53,3 +56,4 @@ export default App;
 // - S7-204:Pass in JobInfo on return
 // - S7-204:Pass in Jobs equal to jobs state value
 // - S7-205:import useEffect react
+// - S7-206:Accessing BtnContainer component
