@@ -29,7 +29,7 @@ const App = () => {
   return (
     <section className="jobs-center">
       {/* button container */}
-      <BtnContainer />
+      <BtnContainer jobs={jobs} />
       {/* job info */}
       <JobInfo jobs={jobs} />
     </section>
@@ -57,3 +57,4 @@ export default App;
 // - S7-204:Pass in Jobs equal to jobs state value
 // - S7-205:import useEffect react
 // - S7-206:Accessing BtnContainer component
+// - S7-206:Pass in jobs @BtnContainer return
