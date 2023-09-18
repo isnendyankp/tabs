@@ -4,7 +4,7 @@ import Duties from './Duties';
 
 const JobInfo = ({ jobs, currentItem }) => {
   // alternatives
-  const { company, dates, duties, title } = jobs[0];
+  const { company, dates, duties, title } = jobs[currentItem];
 
   return (
     <article className="job-info">
@@ -30,3 +30,4 @@ export default JobInfo
 // - S7-204:Passin duties on Duties return
 // - S7-204:Passin dates on p with CN job-date
 // - S7-207:call in currentItem state @jobinfo component
+// - S7-207:change index 0 jobs for currentItem state
