@@ -2,19 +2,19 @@ import React from 'react'
 import Duties from './Duties';
 
 
-const JobInfo = ({jobs}) => {
+const JobInfo = ({ jobs, currentItem }) => {
   // alternatives
   const { company, dates, duties, title } = jobs[0];
 
   return (
-    <article className='job-info'>
+    <article className="job-info">
       <h3>{title}</h3>
-      <span className='job-company'>{company}</span>
-      <p className='job-date'>{dates}</p>
+      <span className="job-company">{company}</span>
+      <p className="job-date">{dates}</p>
       <Duties duties={duties} />
     </article>
-  )
-}
+  );
+};
 
 export default JobInfo
 
@@ -29,3 +29,4 @@ export default JobInfo
 // - S7-204:Add Duties on return
 // - S7-204:Passin duties on Duties return
 // - S7-204:Passin dates on p with CN job-date
+// - S7-207:call in currentItem state @jobinfo component
