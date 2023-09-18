@@ -30,7 +30,11 @@ const App = () => {
   return (
     <section className="jobs-center">
       {/* button container */}
-      <BtnContainer jobs={jobs} currentItem={currentItem} />
+      <BtnContainer
+        jobs={jobs}
+        currentItem={currentItem}
+        setCurrentItem={setCurrentItem}
+      />
       {/* job info */}
       <JobInfo jobs={jobs} currentItem={currentItem} />
     </section>
@@ -63,3 +67,4 @@ export default App;
 // - S7-207:Add default first value for currentItem state
 // - S7-207:Pass in currentItem state @return job info
 // - S7-207:Pass in currentItem @BtnContainer return
+// - S7-207:Pass in setCurrentItem @BtnContainer return for updating currentItem
