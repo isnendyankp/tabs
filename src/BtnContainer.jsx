@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const BtnContainer = ({jobs}) => {
+const BtnContainer = ({jobs, currentItem}) => {
   return (
     <div className='btn-container'>
         {jobs.map(()=>{
@@ -22,3 +22,4 @@ export default BtnContainer
 // - S7-206: Add return with button @callback function
 // - S7-206:Add key with accessing item.id @return button key
 // - S7-206:Accessing item.company @value return
+// - S7-207:Accessing currentItem
