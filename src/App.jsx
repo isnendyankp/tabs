@@ -32,7 +32,7 @@ const App = () => {
       {/* button container */}
       <BtnContainer jobs={jobs} />
       {/* job info */}
-      <JobInfo jobs={jobs} />
+      <JobInfo jobs={jobs} currentItem={currentItem} />
     </section>
   );
 };
@@ -61,3 +61,4 @@ export default App;
 // - S7-206:Pass in jobs @BtnContainer return
 // - S7-207:Cr8 base currentItem state value
 // - S7-207:Add default first value for currentItem state
+// - S7-207:Pass in currentItem state @return job info
