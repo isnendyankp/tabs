@@ -7,6 +7,7 @@ const url = 'https://course-api.com/react-tabs-project';
 const App = () => {
   const [isloading, setIsLoading] = useState(true);
   const [jobs, setJobs] = useState([]);
+  const [currentItem, setCurrentItem] = ;
 
   const fetchJobs = async () => {
     const response = await fetch(url);
@@ -58,3 +59,4 @@ export default App;
 // - S7-205:import useEffect react
 // - S7-206:Accessing BtnContainer component
 // - S7-206:Pass in jobs @BtnContainer return
+// - S7-207:Cr8 base currentItem state value
