@@ -8,7 +8,7 @@ const BtnContainer = ({ jobs, currentItem, setCurrentItem }) => {
         return ( 
           <button key={item.id} 
           onClick={()=>setCurrentItem(index)}
-          className={index === currentItem ? 'job-btn active-btn' : ''}
+          className={index === currentItem ? 'job-btn active-btn' : 'job-btn'}
           >
             {item.company}
           </button>;
@@ -38,3 +38,4 @@ export default BtnContainer
 // - S7-207:Add conditional @CN button return (if index equal to currentItem)
 // - S7-207:Add ternary operator base @conditional CN
 // - S7-207:Add condition if true @CN return btn
+// - S7-207:Add condition if false @CN return btn
