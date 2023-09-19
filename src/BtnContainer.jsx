@@ -7,7 +7,7 @@ const BtnContainer = ({ jobs, currentItem, setCurrentItem }) => {
       {jobs.map((item, index) => {
         return ( 
           <button key={item.id} 
-          onClick={()=>setCurrentItem()}
+          onClick={()=>setCurrentItem(index)}
           className='job-btn'>
             {item.company}
           </button>;
@@ -33,3 +33,4 @@ export default BtnContainer
 // - S7-207:Pass in setCurrentItem @onClick button return
 // - S7-207:fix with pass in item @jobs.map
 // - S7-207:Add new param index @jobs.map
+// - S7-207:pass in index @setCurrentItem
