@@ -5,7 +5,7 @@ const BtnContainer = ({ jobs, currentItem, setCurrentItem }) => {
   return (
     <div className="btn-container">
       {jobs.map(() => {
-        return <button key={item.id}>{item.company}</button>;
+        return <button key={item.id} className='job-btn'>{item.company}</button>;
       })}
     </div>
   );
@@ -22,3 +22,4 @@ export default BtnContainer
 // - S7-206:Accessing item.company @value return
 // - S7-207:Accessing currentItem
 // - S7-207:Accessing setCurrentItem
+// - S7-207:Add CN job-btn @button return
