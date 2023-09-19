@@ -8,7 +8,8 @@ const BtnContainer = ({ jobs, currentItem, setCurrentItem }) => {
         return ( 
           <button key={item.id} 
           onClick={()=>setCurrentItem(index)}
-          className='job-btn'>
+          className={index === currentItem ?}
+          >
             {item.company}
           </button>;
           );
@@ -34,3 +35,4 @@ export default BtnContainer
 // - S7-207:fix with pass in item @jobs.map
 // - S7-207:Add new param index @jobs.map
 // - S7-207:pass in index @setCurrentItem
+// - S7-207:Add conditional @CN button return (if index equal to currentItem)
