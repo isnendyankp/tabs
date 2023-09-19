@@ -4,7 +4,7 @@ import React from 'react'
 const BtnContainer = ({ jobs, currentItem, setCurrentItem }) => {
   return (
     <div className="btn-container">
-      {jobs.map((item) => {
+      {jobs.map((item, index) => {
         return ( 
           <button key={item.id} 
           onClick={()=>setCurrentItem()}
@@ -32,3 +32,4 @@ export default BtnContainer
 // - S7-207:Add base onClick @button return
 // - S7-207:Pass in setCurrentItem @onClick button return
 // - S7-207:fix with pass in item @jobs.map
+// - S7-207:Add new param index @jobs.map
