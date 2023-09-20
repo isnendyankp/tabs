@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import JobInfo from './JobInfo';
 import BtnContainer from './BtnContainer';
+import JobInfo from './JobInfo';
 
 const url = 'https://course-api.com/react-tabs-project';
 
-const App = () => {
-  const [isloading, setIsLoading] = useState(true);
+function App() {
+  const [loading, setLoading] = useState(true);
   const [jobs, setJobs] = useState([]);
   const [currentItem, setCurrentItem] = useState(0);
 
@@ -13,23 +13,21 @@ const App = () => {
     const response = await fetch(url);
     const newJobs = await response.json();
     setJobs(newJobs);
-    setIsLoading(false);
+    setLoading(false);
   };
-
   useEffect(() => {
     fetchJobs();
   }, []);
-  if (isloading) {
+  if (loading) {
     return (
       <section className="jobs-center">
         <div className="loading"></div>
       </section>
     );
   }
-
   return (
     <section className="jobs-center">
-      {/* button container */}
+      {/* btn container */}
       <BtnContainer
         jobs={jobs}
         currentItem={currentItem}
@@ -39,7 +37,8 @@ const App = () => {
       <JobInfo jobs={jobs} currentItem={currentItem} />
     </section>
   );
-};
+}
+
 export default App;
 
 // - S7-202:Setup Tabs Project
@@ -68,3 +67,4 @@ export default App;
 // - S7-207:Pass in currentItem state @return job info
 // - S7-207:Pass in currentItem @BtnContainer return
 // - S7-207:Pass in setCurrentItem @BtnContainer return for updating currentItem
+// - S7-207:Fix code & double check @App.jsx
