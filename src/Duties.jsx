@@ -1,24 +1,23 @@
-import React from 'react'
-import { FaAngleDoubleRight } from 'react-icons/fa';
 import { v4 as uuidv4 } from 'uuid';
+import { FaAngleDoubleRight } from 'react-icons/fa';
 
-const Duties = ({duties}) => {
-    console.log(duties);
-    return (
+const Duties = ({ duties }) => {
+  return (
     <div>
-     {duties.map((duty, index)=>{
-      const id = uuidv4();
-      // console.log(id);
-      return <div key={id} className='job-desc'>
-        <FaAngleDoubleRight className='job-icon'/>
-        <p>{duty}</p>
-      </div>
-     })}
+      {duties.map((duty, index) => {
+        const id = uuidv4();
+        // console.log(id);
+        return (
+          <div key={id} className="job-desc">
+            <FaAngleDoubleRight className="job-icon"></FaAngleDoubleRight>
+            <p>{duty}</p>
+          </div>
+        );
+      })}
     </div>
-  )
-}
-
-export default Duties
+  );
+};
+export default Duties;
 
 // - S7-204:cr8 Duties component base
 // - S7-204:Accessing duties on Duties component
@@ -37,3 +36,4 @@ export default Duties
 // - S7-205:cr8 id = uuidv4
 // - S7-205:checking log id
 // - S7-205:change accessing index key with pass in id
+// - S7-207:Fix code & double check @Duties.jsx (remove junk import)
