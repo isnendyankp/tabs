@@ -1,6 +1,4 @@
-import React from 'react'
 import Duties from './Duties';
-
 
 const JobInfo = ({ jobs, currentItem }) => {
   // alternatives
@@ -15,8 +13,7 @@ const JobInfo = ({ jobs, currentItem }) => {
     </article>
   );
 };
-
-export default JobInfo
+export default JobInfo;
 
 // - S7-204:Cr8 base JobInfo component
 // - S7-204:Pass in parameter jobs
@@ -31,3 +28,4 @@ export default JobInfo
 // - S7-204:Passin dates on p with CN job-date
 // - S7-207:call in currentItem state @jobinfo component
 // - S7-207:change index 0 jobs for currentItem state
+// - S7-207:Fix code & double check @JobInfo.jsx (remove import junk code)
